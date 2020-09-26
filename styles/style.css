@@ -39,8 +39,8 @@ li{
 
 .parent > ul {
   display: inline-block;
-
 }
+
 
 p{
   font-size: 20px;    
@@ -52,4 +52,21 @@ p{
 .changeName{
   width: 100px;
   height: 40px;
+  position: fixed;
+  left: 5px;
+  bottom: 8px
+}
+
+.download{
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  position: fixed;
+  left: 200px;
+  bottom: 8px
+}
+
+button{
+  text-align: center;
+
 }

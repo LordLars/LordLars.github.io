@@ -38,6 +38,9 @@ function setUserName() {
     setUserName();
   }
 
+  <input type="button" 
+  onclick="location.href='https://google.com';" 
+  value="Go to Google" />
 
 /*
 document.querySelector('html').onclick = function() {
