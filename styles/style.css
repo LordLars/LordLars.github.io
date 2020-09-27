@@ -54,8 +54,8 @@ button{
 
 ul{
   font-family: sans-serif;
-  position: absolute;
-  bottom: 5%;
+  position: fixed;
+  bottom: 5px;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
