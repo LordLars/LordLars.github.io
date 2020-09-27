@@ -8,7 +8,7 @@ var myHeading = document.querySelector('h1');
 function setUserName() {
     var myName = prompt('Bitte geben Sie Ihren Namen ein.');
     localStorage.setItem('name', myName);
-    myHeading.textContent = 'Wellcome, ' + myName + " to the best Website";
+    myHeading.textContent = 'Wellcome ' + myName + " to the best Website";
   }
 
   if(!localStorage.getItem('name')) {
