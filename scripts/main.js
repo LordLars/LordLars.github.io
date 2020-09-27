@@ -35,8 +35,8 @@ for(var i = 0; i < items.length; i++){
 for(var i = 0; i < items.length;i++){
     items[i].onclick = function(){
         index = tab.indexOf(this.innerHTML);
-        console.log(this.innerHTML + " INDEX: " + index);
-        myImage.setAttribute ('src','bilder/' + (index + 1) + '.png');
+        console.log(this.innerHTML + " INDEX: " +index + "name:" + this.innerText);
+        myImage.setAttribute ('src','bilder/' + this.innerText + '.png');
     };
 }
 
@@ -44,14 +44,14 @@ myImage.onclick = function() {
   var mySrc = myImage.getAttribute('src');
     for(var i = 0; i < items.length;i++){
 
-      if(mySrc === "bilder/" + (i + 1) + ".png"){
+      if(mySrc === "bilder/" + items[i].innerText + ".png"){
         if(i < (items.length - 1)){
-          myImage.setAttribute ('src','bilder/' + (i + 2) + '.png');
-          $('.parent li:nth-child('+ (i + 2) +')').addClass('active').siblings().removeClass('active')
+          myImage.setAttribute ('src','bilder/' + items[i+1].innerText + '.png');
+          $('.parent li:nth-child('+ (i+2)+')').addClass('active').siblings().removeClass('active')
             
         }else{
-          myImage.setAttribute ('src','bilder/' + (1) + '.png');
-          $('.parent li:nth-child('+ (1) +')').addClass('active').siblings().removeClass('active')
+          myImage.setAttribute ('src','bilder/' + (items[0].innerText) + '.png');
+          $('.parent li:nth-child('+ 1 +')').addClass('active').siblings().removeClass('active')
         }
 
       }
