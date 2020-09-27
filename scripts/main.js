@@ -45,13 +45,13 @@ myImage.onclick = function() {
     for(var i = 0; i < items.length;i++){
 
       if(mySrc === "bilder/" + (i + 1) + ".png"){
-        console.log("PIC: " + (i + 1));
         if(i < (items.length - 1)){
           myImage.setAttribute ('src','bilder/' + (i + 2) + '.png');
-          items[i].addClass('active');
-          console.log("Item: " + i);
+          $('.parent li:nth-child('+ (i + 2) +')').addClass('active').siblings().removeClass('active')
+            
         }else{
           myImage.setAttribute ('src','bilder/' + (1) + '.png');
+          $('.parent li:nth-child('+ (1) +')').addClass('active').siblings().removeClass('active')
         }
 
       }
@@ -64,9 +64,6 @@ myImage.onclick = function() {
 //--------------------------
 //       List:
 //--------------------------
-function setActive(){
-  $items[0].addClass('active').siblings().removeClass('active');
-}
 
 $(document).on('click', 'ul li', function(){
   $(this).addClass('active').siblings().removeClass('active')
