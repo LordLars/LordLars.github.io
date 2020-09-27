@@ -14,22 +14,24 @@
     <body>
         <h1>Bilder meines Games</h1>
         <p>Der Baum des <strong>Lebens: </p></strong>
-        <img class= "lol" src="bilder/TreeWithDent1.png" alt="Abbild: ein Baum">
-        <p class= "lol">...</p>
+        <img class= "lol" src="bilder/4.png" alt="Abbild: ein Baum">
 
-        <p>Es gibt noch <strong>viele</strong> weitere Bilder: </p>
 
         <div class="parent">
-            <ul> 
-                <li>Fackel</li>
-                <li>Spieler</li>
-                <li>Axt</li>
+            <ul id="list"> 
+                <!--<li onclick="changePic()">Fackel</li>-->
+                <li class="active"><a href="#">Torch</a></li> 
+                <li><a href="#">Player</a></li> 
+                <li><a href="#">Axe</a></li> 
+                <li><a href="#">Tree</a></li> 
+
             </ul>
         </div>
         
         <input type="button" onclick="location.href='download/MyGame3.apk';" value="Download" class="download" />
+        <input type="button" onclick="setUserName()" value="Change Name" class="changeName" />
 
-        <button class="changeName">Name ändern</button>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script src="scripts/main.js"></script>
         
     </body>
