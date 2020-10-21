@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <title>
-       Game by Tod_mir_Leid
-    </title>
-    <head>
-        <meta charset="utf-8">
-        <title>Mein Testseite</title>
-        <link href="styles/style.css" rel="stylesheet" type="text/css">
 
+    <head>  
+        <title>Game by Tod_mir_Leid</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Lars Schnabel">
+        <meta name="description" content="Its about my game which is about to survival">
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet"type='text/css'>
-        
+
+      
     </head>
     <body>
-        <h1>Bilder meines Games</h1>
-        <p>Der Baum des <strong>Lebens: </p></strong>
-        <img class= "lol" src="bilder/Tree.png" alt="Abbild: ein Baum">
+        <header>
+            <h1>Bilder meines Games</h1>
+            <p><a href="anotherPage.html" title = "lol">Der Baum des <strong>Lebens:</a> </p></strong>
+            <img class= "lol" src="bilder/Tree.png" alt="Abbild: ein Baum">
+            <h4> Another Heading</h4>
+        </header>
+        <nav>    
+            <div class="parent">
+                <ul id="list"> 
+                    <!--<li onclick="changePic()">Fackel</li>-->
+                    <li class="active"><a>Tree</a></li> 
+                    <li><a href="#">Player</a></li> 
+                    <li><a href="#">Axe</a></li> 
+                    <li><a href="#">Torch</a></li> 
+                </ul>
+            </div>
+        </nav>
 
-
-        <div class="parent">
-            <ul id="list"> 
-                <!--<li onclick="changePic()">Fackel</li>-->
-                <li class="active"><a href="#">Tree</a></li> 
-                <li><a href="#">Player</a></li> 
-                <li><a href="#">Axe</a></li> 
-                <li><a href="#">Torch</a></li> 
-
-            </ul>
-        </div>
+       
         
         <input type="button" onclick="location.href='download/Game4.apk';" value="Download" class="download" />
         <input type="button" onclick="setUserName()" value="Change Name" class="changeName" />
